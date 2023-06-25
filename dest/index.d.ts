@@ -1,2 +1,3 @@
-export * from "./test1";
-export * from "./test2";
+export * from "./method-collection";
+export * from "./regular";
+export * from "./typeJudgment";

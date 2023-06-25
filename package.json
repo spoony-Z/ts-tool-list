@@ -1,20 +1,51 @@
 {
-    "name": "ts-tool-list",
-    "version": "1.0.7",
-    "description": "",
-    "main": "dest/index.js",
+    "_from": "ts-tool-list@^1.0.3",
+    "_id": "ts-tool-list@1.0.3",
+    "_inBundle": false,
+    "_integrity": "sha512-WeUkIrh6mQy8pcCScElL+Ux2WyrEz75Xh0vn4Lir2SCgj7VyIiGwu8wEOADC3aSOD2iax/37d1zkYiK4veyUdw==",
+    "_location": "/ts-tool-list",
+    "_phantomChildren": {},
+    "_requested": {
+        "type": "range",
+        "registry": true,
+        "raw": "ts-tool-list@^1.0.3",
+        "name": "ts-tool-list",
+        "escapedName": "ts-tool-list",
+        "rawSpec": "^1.0.3",
+        "saveSpec": null,
+        "fetchSpec": "^1.0.3"
+    },
+    "_requiredBy": [
+        "#USER",
+        "/"
+    ],
+    "_resolved": "https://registry.npmjs.org/ts-tool-list/-/ts-tool-list-1.0.3.tgz",
+    "_shasum": "245c2d3093b4cb8631f3e17c9de6f8fb9cd34ebb",
+    "_spec": "ts-tool-list@^1.0.3",
+    "_where": "C:\\Users\\admin\\Desktop\\168wangxiao-ui",
+    "author": {
+        "name": "spoony-z"
+    },
     "bugs": {
         "url": "https://gitee.com/nmgwap/time-formatting/issues"
     },
+    "bundleDependencies": false,
+    "deprecated": false,
+    "description": "",
     "files": [
-        "dest/*",
-        "README.md"
+        "LICENSE",
+        "README.md",
+        "index.js",
+        "index.d.ts"
     ],
+    "keywords": [],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "ts-tool-list",
     "scripts": {
         "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
-    "author": "spoony-z",
-    "license": "MIT"
+    "types": "index.d.ts",
+    "version": "1.0.3"
 }
