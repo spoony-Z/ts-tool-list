@@ -9,3 +9,15 @@
  * @returns {Boolean} 是：true   否：false
  */
 export declare function characterString(str: any): boolean;
+/**
+ * 判断是否是数组
+ * @param {Array} arr 数组
+ * @returns {Boolean}
+ */
+export declare const arrJudge: (arr: any[]) => boolean;
+/**
+ *  判断是否是数字
+ * @param {Number} data
+ * @returns {Boolean}
+ */
+export declare const checkNum: (data: string | number) => boolean;

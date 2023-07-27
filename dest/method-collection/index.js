@@ -5,7 +5,7 @@
  * @returns {Boolean}
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getParentIdAll = exports.getNode = exports.getPromises = void 0;
+exports.getParentIdAll = exports.getRecursiveMatch = exports.getPromises = void 0;
 /**
  * @description 判断是否为图片路径
  * @param {String} url 路径
@@ -25,32 +25,32 @@ function getPromises(url) {
 }
 exports.getPromises = getPromises;
 /**
- * @description 递归数组返回想要的值，返回所有匹配到的节点组成的数组
- * @param {Array}           list        要递归的数组
+ * @description 递归，返回所有匹配到的节点数据
+ * @param {Array}           list        递归的数组
  * @param {String}          childKey    子集字段
- * @param {String}          key         要匹配的字段（===判断）
- * @param {String/Number}   val         要匹配字段所对应的值（===判断）
+ * @param {String}          key         要匹配的字段名（===判断）
+ * @param {String | Number}   val         要匹配字段所对应的值（===判断）
  * @returns {Array} 返回所有匹配到的数据
  */
-function getNode(list, childKey, key, val, result = []) {
+function getRecursiveMatch(list, childKey, key, val, result = []) {
     list.forEach((item) => {
         if (item[key] === val) {
             result.push(item);
         }
         if (item[childKey] && item[childKey].length > 0) {
-            getNode(item[childKey], childKey, key, val, result);
+            getRecursiveMatch(item[childKey], childKey, key, val, result);
         }
     });
     return result;
 }
-exports.getNode = getNode;
+exports.getRecursiveMatch = getRecursiveMatch;
 /**
- * @description 递归数组，返回所有匹配到的父级数据
+ * @description 递归，返回所有匹配到的父级数据
  * @param {Array} list 要递归的数组
  * @param {String} id 子集字段值
  * @param {String} fieldName 子集字段名
  * @param {String} children 子集
- * @returns {Array} 返回所有匹配到的数据
+ * @returns {Array | undefined} 返回所有匹配到的数据
  */
 function getParentIdAll(list, fieldName, id, children) {
     for (let i in list) {

@@ -33,19 +33,17 @@
     "deprecated": false,
     "description": "",
     "files": [
-        "LICENSE",
-        "README.md",
-        "index.js",
-        "index.d.ts"
+        "dest/*"
     ],
     "keywords": [],
     "license": "MIT",
-    "main": "index.js",
+    "main": "./dest/index.js",
+    "module": "./dest/index.js",
     "name": "ts-tool-list",
     "scripts": {
         "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "types": "index.d.ts",
-    "version": "1.0.3"
+    "version": "1.1.0"
 }
