@@ -19,3 +19,12 @@ export function downLoadFile(url: string): void {
       document.body.removeChild(link);
     });
 }
+
+/**
+ * 根据 url 获取 url 文件的后缀
+ * @param url
+ */
+export function fileUrlType(url: string): string {
+    const parts = url.split('.');
+    return parts[parts.length - 1];
+}

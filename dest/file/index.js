@@ -3,7 +3,7 @@
  * 文件api
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.downLoadFile = void 0;
+exports.fileUrlType = exports.downLoadFile = void 0;
 /**
  * 根据 url 下载文件
  * @param url
@@ -22,3 +22,12 @@ function downLoadFile(url) {
     });
 }
 exports.downLoadFile = downLoadFile;
+/**
+ * 根据 url 获取 url 文件的后缀
+ * @param url
+ */
+function fileUrlType(url) {
+    const parts = url.split('.');
+    return parts[parts.length - 1];
+}
+exports.fileUrlType = fileUrlType;

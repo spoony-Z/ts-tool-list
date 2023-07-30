@@ -17,3 +17,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./method-collection"), exports);
 __exportStar(require("./regular"), exports);
 __exportStar(require("./typeJudgment"), exports);
+__exportStar(require("./file"), exports);
