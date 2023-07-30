@@ -7,8 +7,8 @@ heroImage: /logo.svg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: 168wangxiao-ui文档
-tagline: 一个基于element-ui二次封装的ui库。
+heroText: ts-tool-list文档
+tagline: 基于TypeScript封装的API库。
 actions:
   - text: 使用指南 💡
     link: ./demo/

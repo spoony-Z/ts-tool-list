@@ -1,12 +1,12 @@
 .DS_Store
 node_modules
 dist/
-168wangxiao-ui-docs/node_modules
-168wangxiao-ui-docs/src/.vuepress/.cache/
-168wangxiao-ui-docs/src/.vuepress/.temp/
-168wangxiao-ui-docs/src/.vuepress/dist/
-168wangxiao-ui-docs/pnpm-lock.yaml*
-168wangxiao-ui-docs/package-lock.json*
+ts-tool-list-docs/node_modules
+ts-tool-list-docs/src/.vuepress/.cache/
+ts-tool-list-docs/src/.vuepress/.temp/
+ts-tool-list-docs/src/.vuepress/dist/
+ts-tool-list-docs/pnpm-lock.yaml*
+ts-tool-list-docs/package-lock.json*
 
 # local env files
 .env.local
