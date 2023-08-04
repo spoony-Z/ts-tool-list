@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "168wangxiao-ui",
+  title: "ts-tool-list",
   description: "vuepress-theme-hope 的文档演示",
   plugins: [
     searchProPlugin({

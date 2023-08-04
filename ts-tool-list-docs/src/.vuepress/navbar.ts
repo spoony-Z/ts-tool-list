@@ -8,7 +8,7 @@ export default navbar([
     link: "/"
   },
     {
-    text: "组件",
+    text: "文档",
     icon: "book",
     link: "/blogs/",
   },
