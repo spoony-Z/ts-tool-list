@@ -1,14 +1,12 @@
 .DS_Store
 node_modules
 dist/
-test/node_modules
-tool-list/node_modules
-docs/node_modules
-docs/src/.vuepress/.cache/
-docs/src/.vuepress/.temp/
-docs/src/.vuepress/dist/
-docs/pnpm-lock.yaml*
-docs/package-lock.json*
+ts-tool-list-docs/node_modules
+ts-tool-list-docs/src/.vuepress/.cache/
+ts-tool-list-docs/src/.vuepress/.temp/
+ts-tool-list-docs/src/.vuepress/dist/
+ts-tool-list-docs/pnpm-lock.yaml*
+ts-tool-list-docs/package-lock.json*
 
 # local env files
 .env.local
