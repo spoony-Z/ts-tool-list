@@ -29,7 +29,7 @@
     "bugs": {
         "url": "https://gitee.com/nmgwap/time-formatting/issues"
     },
-    "bundleDependencies": false,
+    "bundleDependencies": [],
     "deprecated": false,
     "description": "",
     "files": [
@@ -45,5 +45,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "types": "index.d.ts",
-    "version": "1.1.4"
+    "version": "1.1.6",
+    "dependencies": {
+        "jszip": "^3.10.1"
+    }
 }
