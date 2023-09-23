@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 👉开始
-      link: /markdown-examples
+      link: /安装使用
     - theme: alt
       text: 📞联系作者
       link: /api-examples
