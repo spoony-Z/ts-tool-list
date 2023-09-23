@@ -28,7 +28,8 @@ export default defineConfig({
           { text: '安装使用', link: '/安装使用' },
           { text: '文件相关', link: '/文件相关' },
           { text: '递归', link: '/递归' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '禁用', link: '/禁用' },
+          // { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       },
     ],
