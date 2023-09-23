@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "spoony-z",
-  base: '/',
+  base: '/ts-tool-list/',
   description: "A VitePress Site",
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   markdown: {
