@@ -19,7 +19,7 @@ const sponsors = computed(() => {
 
 <template>
   <a class="viteconf" href="https://viteconf.org/23" target="_blank">
-    <img width="22" height="22" src="/viteconf.svg" />
+    <!-- <img width="22" height="22" src="/viteconf.svg" /> -->
     <span>
       <p class="extra-info">Free Online Conference</p>
       <p class="heading">ViteConf 23 - Oct 5</p>

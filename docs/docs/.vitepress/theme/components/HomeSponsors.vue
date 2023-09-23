@@ -6,27 +6,13 @@ const { data } = useSponsor()
 </script>
 
 <template>
-  <VPHomeSponsors
-    v-if="data"
-    message="别抱怨努力的苦，那是你去看世界的路"
-    :data="data"
-  />
+  <VPHomeSponsors v-if="data" message="别抱怨努力的苦，那是你去看世界的路" :data="data" />
   <div class="action">
-    <a
-      class="sponsor"
-      href="https://github.com/sponsors/vitejs"
-      target="_blank"
-      rel="noreferrer"
-    >
-    ❤️ 我要努力的苦
+    <a class="sponsor" href="https://github.com/sponsors/vitejs" target="_blank" rel="noreferrer">
+      ❤️ 我要努力的苦
     </a>
-    <a
-      class="sponsor"
-      href="https://github.com/sponsors/yyx990803"
-      target="_blank"
-      rel="noreferrer"
-    >
-    💔我要躺平平
+    <a class="sponsor" href="https://github.com/sponsors/yyx990803" target="_blank" rel="noreferrer">
+      💔我要躺平平
     </a>
   </div>
 </template>
