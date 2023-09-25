@@ -15,10 +15,10 @@ hero:
       link: /安装使用
     - theme: alt
       text: 📞联系作者
-      link: /api-examples
+      link: /联系作者
     - theme: alt
       text: 💡作者博客
-      link: /api-examples
+      link: /作者博客
 
 features:
   - icon: 📁
