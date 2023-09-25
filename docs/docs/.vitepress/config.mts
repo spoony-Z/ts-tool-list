@@ -71,7 +71,8 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/安装使用' }
+      { text: '文档', link: '/安装使用' },
+      { text: '168wangxiao-ui', link: 'https://spoony_z.gitee.io/168wangxiao-ui' }
     ],
     sidebar: [
       {
