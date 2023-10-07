@@ -29,3 +29,19 @@ var check = function () {
 };
 check();
 }
+
+/**
+ * @abstract 取消禁用控制台
+ */
+
+// 首先，声明一个变量来保存定时器的ID
+let consoleDisableInterval;
+
+// 然后，创建一个函数来停止禁用控制台
+export function enableConsole() {
+  clearInterval(consoleDisableInterval); // 停止定时器
+  console.log('Console is now enabled.'); // 输出消息，表示控制台已启用
+}
+
+// 调用 enableConsole 函数来取消禁用控制台
+enableConsole();

@@ -4,6 +4,7 @@
 /**
  * 根据 url 下载文件
  * @param url
+ * @param fileName
  */
 export declare function downLoadFile(url: string, fileName: string): void;
 /**

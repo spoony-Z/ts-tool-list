@@ -21,3 +21,11 @@ export declare const arrJudge: (arr: any[]) => boolean;
  * @returns {Boolean}
  */
 export declare const checkNum: (data: string | number) => boolean;
+/**
+ * 数组匹配
+ * @param {Number} arrayItem 匹配的数组（字符串数组）
+ * @param {Number} arrayAll 匹配的数组（数组对象）
+ * @param {Number} fieldName 匹配数组中的对象的key
+ * @returns {Array} 匹配到的数组
+ */
+export declare const arrayObjMatching: <T>(arrayItem: string[], arrayAll: T[], fieldName: keyof T) => T[];

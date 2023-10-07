@@ -14,7 +14,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * @description 常用递归处理
+ */
 __exportStar(require("./method-collection"), exports);
+/**
+ * @description 常用正则
+ */
 __exportStar(require("./regular"), exports);
+/**
+ * @description 常用类型判断
+ */
 __exportStar(require("./typeJudgment"), exports);
+/**
+ * @description 文件相关
+ */
 __exportStar(require("./file"), exports);
+/**
+ * @description 禁用操作
+ */
+__exportStar(require("./prohibit"), exports);

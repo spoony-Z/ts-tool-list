@@ -7,6 +7,7 @@ exports.fileUrlType = exports.downLoadFile = void 0;
 /**
  * 根据 url 下载文件
  * @param url
+ * @param fileName
  */
 function downLoadFile(url, fileName) {
     let fileNames = fileName || url.slice(url.lastIndexOf('/') + 1);
