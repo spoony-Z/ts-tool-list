@@ -26,12 +26,12 @@ import {
 } from "./test-api/method-collection";
 
 import { isString } from "./test-api/regular";
-import { downLoadFile, fileUrlType, convertAndRender } from "./test-api/file";
+import { downLoadFile, fileUrlType, convertAndRender, Base64Blob } from "./test-api/file";
 import { defineComponent } from 'vue'
 /** 禁用操作 */
-import { DisableConsole } from "./test-api/prohibit";
+import { DisableConsole, enableConsole } from "./test-api/prohibit";
 // import { saveAs } from 'file-saver';
-// import { arrAndSet } from "./test-api/typeJudgment";
+import { arrayObjMatching } from "./test-api/typeJudgment";
 
 export default defineComponent({
   data() {
@@ -42,7 +42,8 @@ export default defineComponent({
     }
   },
   created() {
-    DisableConsole()
+    // DisableConsole(true)
+    // enableConsole()
     // this.Base64Img()
     // const base64 = `https://cexatu.168wangxiao.com/sch/static/img/500.5492b5.png`
 
@@ -53,12 +54,12 @@ export default defineComponent({
     // console.log("arrAndSet方法222", arrAndSet(testArrObj2, testArrObj1));
     // console.log("getNode方法", getNode(dataList, 'children', 'label', "一级1"))
     // console.log("getParentIdAll方法", getParentIdAll(dataList, 'id', 10 ,'children'))
+    console.log(Base64Blob(this.base64, null));
     console.log("arrAndSet", arrAndSet(testArr1, testArr2));
     console.log("arrIntersection", arrIntersection(testArr1, testArr2));
-    console.log("arrDifference", arrDifference(testArr1, testArr2))
+    console.log("arrDifference", arrDifference(testArr1, testArr2));
     console.log('fileUrlType', fileUrlType(this.files));
     console.log('fileUrlType', fileUrlType(this.file1));
-
   },
   methods: {
     dianji(): void {

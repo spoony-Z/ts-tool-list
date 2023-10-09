@@ -1,14 +1,13 @@
-.DS_Store
 node_modules
-dist/
 test/node_modules
 tool-list/node_modules
 docs/node_modules
 docs/src/.vuepress/.cache/
 docs/src/.vuepress/.temp/
-docs/src/.vuepress/dist/
 docs/pnpm-lock.yaml*
 docs/package-lock.json*
+
+cache
 
 # local env files
 .env.local
