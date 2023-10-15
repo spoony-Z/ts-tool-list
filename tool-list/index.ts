@@ -22,3 +22,8 @@ export * from "./file";
  * @description 禁用操作
  */
 export * from "./prohibit";
+
+/**
+ * @description 时间操作
+ */
+export * from "./time";

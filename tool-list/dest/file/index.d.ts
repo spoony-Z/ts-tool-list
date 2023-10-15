@@ -18,3 +18,10 @@ export declare function fileUrlType(url: string): string;
  * @param {String} FileName 图片文件名(必须带后缀名)
  * @returns {Promise} res -> 压缩包的 Blob
  */
+/**
+ * 将base64转为Blob
+ * @param {String} base64 base64 数据
+ * @param {String} FileName 图片文件名(必须带后缀名)
+ * @returns {Blob} res -> Blob
+ */
+export declare function Base64Blob(base64: string): Blob | null;

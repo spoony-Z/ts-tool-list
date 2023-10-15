@@ -54,6 +54,7 @@ export default defineComponent({
     // console.log("arrAndSet方法222", arrAndSet(testArrObj2, testArrObj1));
     // console.log("getNode方法", getNode(dataList, 'children', 'label', "一级1"))
     // console.log("getParentIdAll方法", getParentIdAll(dataList, 'id', 10 ,'children'))
+  
     console.log(Base64Blob(this.base64, null));
     console.log("arrAndSet", arrAndSet(testArr1, testArr2));
     console.log("arrIntersection", arrIntersection(testArr1, testArr2));
