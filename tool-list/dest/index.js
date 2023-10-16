@@ -34,3 +34,7 @@ __exportStar(require("./file"), exports);
  * @description 禁用操作
  */
 __exportStar(require("./prohibit"), exports);
+/**
+ * @description 时间操作
+ */
+__exportStar(require("./time"), exports);
