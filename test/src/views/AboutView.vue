@@ -26,7 +26,7 @@ import {
 } from "./test-api/method-collection";
 
 import { isString } from "./test-api/regular";
-import { downLoadFile, fileUrlType, convertAndRender, Base64Blob } from "./test-api/file";
+import { downLoadFile, fileUrlType, Base64Blob, urlToFile, urlToBlob } from "./test-api/file";
 import { defineComponent } from 'vue'
 /** 禁用操作 */
 import { DisableConsole, enableConsole } from "./test-api/prohibit";
@@ -61,6 +61,19 @@ export default defineComponent({
     console.log("arrDifference", arrDifference(testArr1, testArr2));
     console.log('fileUrlType', fileUrlType(this.files, true));
     console.log('fileUrlType', fileUrlType(this.file1, false));
+    const url = "https://168wangxiao.oss-cn-beijing.aliyuncs.com/thesis/template/2e200739b4cc52a9f228bc1d69c3ff6f.pdf"
+    const nameFile = "文件下载.pdf"
+    urlToFile(url, nameFile).then((file) => {
+      if (file) {
+        console.log(file, "文件下载")
+      }else {
+        console.log(file, "下载失败！")
+      }
+    })
+
+    urlToBlob(url).then((r: any) => {
+      console.log(r, "UDUDUDUDUDU^^#^#^%#%#%#")
+    })
   },
   methods: {
     dianji(): void {

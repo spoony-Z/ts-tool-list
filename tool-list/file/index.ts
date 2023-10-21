@@ -1,6 +1,4 @@
-/**
- * 文件api
- */
+/** 文件api */
 
 /**
  * 根据 url 下载文件
@@ -230,4 +228,70 @@ export function Base64Blob(base64: string): Blob | null {
   }
   console.error("Invalid Base64 format");
   return null;
+}
+
+/**
+ * 将 url 转换为 file 对象
+ * @param url 
+ * @param fileName
+ * @returns 
+ */
+export async function urlToFile(url: string, fileName: string): Promise<File | null> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Failed to fetch file data.");
+    }
+
+    // 获取文件数据的 ArrayBuffer
+    const data = await response.arrayBuffer();
+
+    // 根据文件名创建一个 Blob对 象
+    const blob = new Blob([data], { type: response.headers.get("content-type") || "" });
+
+    // 创建一个 File 对象，第三个参数是可选的文件属性
+    const file = new File([blob], fileName, { type: blob.type });
+    return file;
+  } catch (error) {
+    return null;
+  }
+}
+
+/**
+ * 通过文件 URL 获取文件名
+ * @param url 
+ * @returns 
+ */
+export function getFileNameFromUrl(url: string): string | null {
+  try {
+    // 使用 URL 构造函数来解析 URL
+    const urlObject = new URL(url);
+    // 从 URL 对象中获取文件名
+    const path = urlObject.pathname;
+    const segments = path.split('/');
+    const fileName = segments[segments.length - 1];
+    return fileName;
+  } catch (error) {
+    console.error("Error:", error);
+    return null; // 解析错误时返回 null
+  }
+}
+
+/**
+ * 将 URL 转为 Blob
+ * @param url 
+ * @returns 
+ */
+export async function urlToBlob(url: string): Promise<Blob | null> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch the resource: ${response.statusText}`);
+    }
+    const blob = await response.blob();
+    return blob;
+  } catch (error) {
+    console.error('Error:', error);
+    return null;
+  }
 }
