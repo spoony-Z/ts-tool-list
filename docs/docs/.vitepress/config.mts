@@ -31,7 +31,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: "./logo-with-shadow.png",
+    logo: "./logo.png",
     // editLink: {
     //   pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
     //   text: 'Suggest changes to this page',

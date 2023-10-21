@@ -7,7 +7,7 @@ hero:
   text: "使用文档"
   tagline: 使用 Typescript 封装的函数
   image:
-    src: ./logo-with-shadow.png
+    src: ./logo.png
     alt: VitePress
   actions:
     - theme: brand
