@@ -282,13 +282,15 @@ export function getFileNameFromUrl(url: string): string | null {
  * @param url 
  * @returns 
  */
-export async function urlToBlob(url: string): Promise<Blob | null> {
+export async function urlToBlob(url: string, type: string | null): Promise<Blob | null> {
   try {
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Failed to fetch the resource: ${response.statusText}`);
     }
     const blob = await response.blob();
+    if (type === "" || type)
+      return new Blob([blob], { type: type === "" ? '' : type });
     return blob;
   } catch (error) {
     console.error('Error:', error);

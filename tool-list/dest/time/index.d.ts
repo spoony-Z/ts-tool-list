@@ -9,4 +9,7 @@
  * @param { string } endTime 结束时间
  * @returns {Boolean}
  */
-export declare function isCurrentTimeInRange(startTime: string, endTime: string, specifyTime: string | null): boolean;
+/**
+ * @description 设置有效期
+ *
+ */
