@@ -1,6 +1,4 @@
-/**
- * 文件api
- */
+/** 文件api */
 /**
  * 根据 url 下载文件
  * @param url
@@ -27,3 +25,22 @@ export declare function fileUrlType(url: string, determine: boolean): string | b
  * @returns {Blob} res -> Blob
  */
 export declare function Base64Blob(base64: string): Blob | null;
+/**
+ * 将 url 转换为 file 对象
+ * @param url
+ * @param fileName
+ * @returns
+ */
+export declare function urlToFile(url: string, fileName: string): Promise<File | null>;
+/**
+ * 通过文件 URL 获取文件名
+ * @param url
+ * @returns
+ */
+export declare function getFileNameFromUrl(url: string): string | null;
+/**
+ * 将 URL 转为 Blob
+ * @param url
+ * @returns
+ */
+export declare function urlToBlob(url: string, type: string | null): Promise<Blob | null>;

@@ -21,4 +21,3 @@ export * from "./prohibit";
 /**
  * @description 时间操作
  */
-export * from "./time";

@@ -10,7 +10,7 @@ export default defineConfig({
   description: 'javascript工具库、Typescript工具库',
   base: '/ts-tool-list/',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo-with-shadow.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: ogTitle }],
     ['meta', { property: 'og:image', content: ogImage }],

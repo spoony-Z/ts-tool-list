@@ -71,7 +71,7 @@ export default defineComponent({
       }
     })
 
-    urlToBlob(url).then((r: any) => {
+    urlToBlob(url, "").then((r: any) => {
       console.log(r, "UDUDUDUDUDU^^#^#^%#%#%#")
     })
   },

@@ -37,4 +37,4 @@ __exportStar(require("./prohibit"), exports);
 /**
  * @description 时间操作
  */
-__exportStar(require("./time"), exports);
+// export * from "./time";
