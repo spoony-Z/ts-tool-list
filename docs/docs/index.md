@@ -5,8 +5,8 @@ layout: home
 hero:
   name: "TS-TOOL-LIST"
   text: "使用文档"
-  tagline: <p>使用 Typescript 封装的常用函数集合</p>
-          <p>此网站已集成智能 AI 聊天，进入网站稍等片刻，可点击右下角聊天</p>
+  tagline: 使用 Typescript 封装的常用函数集合。
+          此网站已集成智能 AI 聊天，进入网站稍等片刻，可点击右下角聊天
   image:
     src: ./logo.png
     alt: VitePress
